@@ -24,6 +24,13 @@ type allTasksType = {
     [key: string]: TaskType[]
 }
 
+export type todolistType = {
+    id: string
+    todolistTitle: string
+    filterCond: CondType
+}
+
+
 function App() {
 
 
@@ -109,11 +116,7 @@ function App() {
 
     }
 
-    type todolistType = {
-        id: string
-        todolistTitle: string
-        filterCond: CondType
-    }
+
     let todolistId1 = v1()
 
 
